@@ -16,7 +16,7 @@ end
 
 def long_planeteer_calls(planeteers)
   planeteers.all? do |calls|
-    calls.length < 4
+    calls.length <= 4
   end
 end
 
