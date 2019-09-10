@@ -15,8 +15,14 @@ def summon_captain_planet(calls)
 end
 
 def long_planeteer_calls(planeteers)
-  planeteers.none? do |calls|
-    calls.length < 4
+  res = []
+  planeteers.each do |calls|
+    res << (calls.length > 4)
+  end
+  if res.include?(true)
+    true
+  else
+    false
   end
 end
 
