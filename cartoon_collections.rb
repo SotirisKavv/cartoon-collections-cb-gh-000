@@ -11,6 +11,7 @@ def summon_captain_planet(calls)
   calls.collect do |call|
     cap_planet_calls << "#{call.capitalize}!"
   end
+  cap_planet_calls
 end
 
 def long_planeteer_calls# code an argument here
